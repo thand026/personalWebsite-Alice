@@ -1,0 +1,139 @@
+@import url(foundation.css);
+
+body{
+    background: var(--darkBlue);
+}
+
+*{
+    color: var(--ghostwhite);
+}
+
+h1{
+    font-size: 3rem;
+    text-align: center;
+}
+
+h2{
+    font-size: 2rem;
+}
+
+h3{
+    font-size: 1.5rem;
+}
+
+p{
+    font-size: 1.5rem;
+}
+
+.closeBtn{
+    color: var(--ghostwhite);
+}
+
+.contactBtn{
+    background: var(--ghostwhite);
+    color: var(--darkBlue);
+}
+
+.contactBtn:hover{
+    background: none;
+    border: solid 2px var(--ghostwhite);
+}
+
+#about{
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 1rem;
+}
+
+.aboutImg{
+    width: 28rem;
+    border-radius: 1.5rem;
+    
+}
+
+#highlights{
+    background: var(--ghostwhite);
+    color: var(--text);
+    padding: 1rem;
+}
+#highlights h1{
+    color: var(--text);
+}
+
+.highlightContainer{
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+
+}
+
+.highlightContainer div{
+    background: var(--darkBlue);
+    width: 24.25rem;
+    margin: auto;
+    text-align: center;
+    border-radius: 1.5rem;
+}
+
+#contact{
+    display: flex;
+    gap: 1rem;
+    font-size: 1.5rem;
+    padding: 2rem;
+
+}
+.contactImg{
+    width: 51vw;
+    border-radius: 1.5rem;
+
+}
+
+.socials{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1rem;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.socials img{
+    width: 3rem;
+}
+
+@media (max-width:768px) {
+    #about{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .aboutImg{
+        width: 75vw;
+    }
+
+    #about div{
+        margin: auto;
+    }
+
+    .highlightContainer{
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .highlightContainer div{
+        width: 85vw;
+        height: 100%;
+    }
+
+    #contact{
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .contactImg{
+        width: 75vw;
+        margin: auto;
+        display: block;
+
+    }
+}

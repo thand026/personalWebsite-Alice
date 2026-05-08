@@ -1,0 +1,81 @@
+@import url(foundation.css);
+
+h1{
+    font-size: 3rem;
+    text-align: center;
+    padding: 1rem;
+}
+
+p{
+    font-size: 1.5rem;
+    padding: 1rem;
+
+    text-align: center;
+}
+
+form{
+    width: 70vw;
+    background: var(--darkBlue);
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2rem;
+    justify-content: center;
+    margin: auto;
+    font-size: 1.5rem;
+    gap: 1.5rem;
+    border-radius: 1.5rem;
+    margin-top: 2rem;
+}
+
+.contactBtn{
+    background: var(--darkBlue);
+}
+
+
+
+label{
+    color: var(--ghostwhite);
+    text-align: right;
+
+    font-family:laila sans-serif;
+}
+
+input{
+    border: none;
+    border-radius: 1rem;
+    width: 350px;
+    padding: 0.5rem;
+    font-family:laila sans-serif;
+}
+
+textarea{
+    width: 350px;
+    height: 179px;
+    border: none;
+    padding: 1rem;
+}
+
+.break{
+    flex-basis: 100%;
+    height: 0;
+}
+
+.sendBtn{
+    width: 92px;
+    height: 53px;
+    padding: 0 0.5rem;
+    font-size: 1.5rem;
+    color: var(--highlight);
+    font-weight: bold;
+
+}
+
+.tab{
+    flex-basis: 10%;
+}
+
+@media (max-width:768px) {
+    .pages a{
+    color: var(--ghostwhite);
+}
+}

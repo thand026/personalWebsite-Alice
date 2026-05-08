@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome</title>
+    <title>Contact Alice</title>
     <link rel="stylesheet" href="foundation.css">
-    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="contact.css">
     
     <!-- Font import -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -20,7 +20,7 @@
         <div class="pages" id="pages">
             <span class="closeBtn" onclick="closeMenu()">&times;</span>
 
-            <a href="index.html" class="activePage">Home</a>
+            <a href="index.html">Home</a>
             <a href="about.html">About</a>
             <a href="contact.html" class="innerContact">Contact</a>
         </div>
@@ -31,39 +31,30 @@
         </div>
     </nav>
 
-    <section id="hero">
-        <div>
-            <img src="Alice(no BG).png" alt="Alice" class="heroImg">
-        </div>
+    <h1>Get In Touch</h1>
+    <p>
+        Interested in working together? Let’s create something memorable! Reach out to discuss potential collaborations, campaigns, or projects.
+    </p>
 
-        <div class='text'>
-            <h1>
-                Welcome, I am <span class="highlight">Alice</span>
-            </h1>
+    <form action="">
+        <label for="name">Name</label>  <div class="tab"></div>
+        <input type="text" required> 
+        <div class="break"></div>
 
-            <p>
-                I'm a professional model and creative content creator with a passion for story telling through visuals
-            </p>
+        <label for="email">Email</label>    <div class="tab"></div>
+        <input type="email" required>   
+        <div class="break"></div>
 
-            <div class="buttons">
+        <label for="Topic">Topic</label>    <div class="tab"></div>
+        <input type="text" required>    
+        <div class="break"></div>
 
-                <button class="btn1">
-                    <a href="contact.html">Contact</a>
-                </button>
-                
-                <button class="btn2">
-                    <a href="#">My Work</a>
-                </button>
-            </div>
+        <label for="message">Message</label>    <div class="tab"></div>    
+        <textarea name="message" id="message" style="border-radius:2rem;" ></textarea>
+        <div class="break"></div>
+        <input type="submit" name="sendBtn" class="sendBtn" id="sendBtn" value="Send">
 
-            <div class="socials">
-                <a href="#"><img src="instagram.png" alt="Instagram Logo"></a>
-                <a href="#"><img src="twitter.png" alt="Twitter Logo"></a>
-                <a href="#"><img src="envelope.png" alt="Email Logo"></a>
-
-            </div>
-        </div>
-    </section>
+    </form>
     
 
     <script src="script.js"></script>
